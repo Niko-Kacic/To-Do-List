@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 2em;
+}
+
+
+
+.form, .to-do-list {
+    background-color: RGB(66, 203, 165);
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: center;
+}
+
+.form {
+    border: 0 solid RGB(66, 203, 165);
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+.to-do-list {
+    border-radius:1em;
+}
+
+
+.to-do-list li {
+    list-style: none;
+    color: RGB(17, 27, 33);
+    padding: .3em;
+}
+
