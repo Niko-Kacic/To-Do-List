@@ -15,5 +15,14 @@ form.onsubmit = (e) => {
     const to_dos_template = to_dos.map(t =>  `<li>${t}</li>` );//con map se devuelve el template de li
  
     to_do_list.innerHTML = to_dos_template.join('');//se agrega html y se les hace join(con strings);
-        
+ 
+    const elements = document.querySelectorAll('#to-do-list li'); //llamo a los li de la lista
+    elements.forEach((elemento, index)=>{
+        elemento.addEventListener('click', ()=> {
+            elemento.parentNode.removeChild(elemento);//con parentNode que es el nodo padre tiene capacidad eliminar elementos hijos con el metodo removeChild(elemento a borrar);
+
+            to_dos.splice(index, 1);
+        })
+    })
+
 }
