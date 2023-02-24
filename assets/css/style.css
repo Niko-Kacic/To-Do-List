@@ -4,22 +4,31 @@
     box-sizing: border-box;
 }
 
-.container {
-    margin-top: 2em;
+html {
+    
+    background: url('https://a-static.besthdwallpaper.com/clean-blackboard-wallpaper-2048x1152-167_49.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    height: 100vh;
+  
 }
 
-
+.container {
+    margin-top: 2em;
+    
+}
 
 .form, .to-do-list {
     background-color: RGB(66, 203, 165);
-    width: 80%;
+    box-shadow: 2px 2px 8px #000;
+    width: 60%;
     margin: 0 auto;
     padding: 1em;
     text-align: center;
+    min-width: 240px;
 }
 
 .form {
-    border: 0 solid RGB(66, 203, 165);
     border-radius: 1em;
     margin-bottom: 1em;
 }
@@ -28,10 +37,49 @@
     border-radius:1em;
 }
 
+.btn {
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    height: 2.2em;
+    background-color: RGBA(19, 160, 248, 1);
+    color: #fff;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+.input {
+    height: 2em;
+    border-radius: 5px;
+    border: none;
+    width: 50%;
+
+    box-shadow: 1px 2px 1px #000;
+}
 
 .to-do-list li {
     list-style: none;
-    color: RGB(17, 27, 33);
-    padding: .3em;
+    color: #f8f8f8;
+    padding: .5em;
+    margin: 0.5em;
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 56%;
+    margin: 1em auto;
+    box-shadow: 1px 1px 2px #000;
+}
+
+.to-do-list li:hover {
+    cursor: pointer;
+    background-color: RGB(66, 190, 145);
+}
+
+
+@media(width <= 600px){
+    .form, .to-do-list {
+        width: 80%;
+    }
 }
 
