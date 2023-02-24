@@ -5,7 +5,7 @@
 }
 
 html {
-    
+    font-family: 'IBM Plex Mono', monospace;
     background: url('https://a-static.besthdwallpaper.com/clean-blackboard-wallpaper-2048x1152-167_49.jpg');
     background-size:cover;
     background-repeat:no-repeat;
@@ -16,6 +16,12 @@ html {
 .container {
     margin-top: 2em;
     
+}
+
+h2 {
+    color: #f8f8f8;
+    margin-bottom:0.5em;
+    text-transform: uppercase;
 }
 
 .form, .to-do-list {
@@ -35,6 +41,7 @@ html {
 
 .to-do-list {
     border-radius:1em;
+   
 }
 
 .btn {
@@ -69,6 +76,7 @@ html {
     width: 56%;
     margin: 1em auto;
     box-shadow: 1px 1px 2px #000;
+    overflow:hidden;
 }
 
 .to-do-list li:hover {
